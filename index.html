@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz </title>
+	 <link rel="icon" type="image/x-icon" href="image/icon3.jpg">
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- icon -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+	<!-- navbar -->
+	<div class="box-navbar">
+		<nav>
+			<div class="icon">
+				<i class="fa-solid fa-check-to-slot"></i>
+				<span>ONO Quiz</span>
+			</div>
+			<div class="nama">
+				<span>Anynymus</span>
+
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="box-login">
+			<div class="left">
+				<img src="image/img-Login.png">
+			</div>
+			<div class="right">
+				<div class="box-form">
+					<form>
+						<i class="fa-solid fa-check-to-slot"></i>
+						<h2>ONO QUIZ</h2>
+						<hr>
+							<div class="input-group">
+								<input type="text" name="" id="username" >
+								<label for="username">Masukkan Nama</label>
+							</div>
+						<p>Quiz seputar tag dan kegunaan HTML,property dan value dalam CSS serta fungsi,method,pengkondisian,dialog box   Javascript
+						.</p>
+								<!-- button start quiz -->
+							<div class="start-quiz">
+								<button type="submit" class="btn-quiz">Start Quiz</button>
+							</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- start rule permainan -->
+	<div class="box_rule" >
+		<header>
+			<h2>beberapa aturan pada kuis ini</h2>
+		</header>
+		<div class="daftar-list">
+			<ul>
+				<li class="list">1. Anda hanya memiliki <span>15 detik </span>untuk menjawabnya</li>
+				<li class="list">2. setelah Anda memilih jawaban,jawaban tidak dapat dibatalkan.</li>
+				<li class="list">3. Jika waktu-nya habis.Soal akan dianggap tidak dikerjakan</li>
+				<li class="list">4. Setiap soal bernilai 5 point</li>
+				<li class="list">5. Anda akan mendapatkan poin berdasarkan jawaban Anda yang benar</li>
+
+			</ul>
+		</div>
+		<div class="tombol">
+			<button class="exit" type="submit">Keluar Quiz</button>
+			<button class="continue" type="submit">Lanjut</button>
+		</div>
+	</div>
+
+
+	<!-- box pertanyaan -->
+	<div class="box-question">
+		<header>
+			<h3>Quiz HTML,CSS & JS</h3>
+			<div class="waktu">
+				<div class="waktu-text"><span>Waktu tersisa</span></div>
+				<div class="waktu-detik"><span>15</span></div>
+			</div>
+		</header>
+
+		<div class="option-list">
+			<div class="question">
+				<!-- <p>1. html merupakan ?</p> -->
+			</div>
+			<!-- data id untuk mendaptkan angka menjadi array -->
+			
+				<div class="option" >
+					<ul>
+						<li>
+							<div class="parent">
+								<input type="radio" class="answer" name="answer" id="a">
+								<label for="a" id="optionA">Option A</label>
+							</div>
+						</li>
+
+						<li>
+							<div class="parent">
+
+								<input type="radio" class="answer" name="answer" id="b">
+								<label for="b" id="optionB">Option B</label>
+							</div>
+						</li>
+						<li>
+							<div class="parent">
+							<input type="radio" class="answer" name="answer" id="c">
+							<label for="c" id="optionC">Option C</label>
+							</div>
+						</li>
+						<li>
+							<div class="parent">
+							<input type="radio" class="answer" name="answer" id="d">
+							<label for="d" id="optionD">Option D</label>
+							</div>
+						</li>
+						
+						<p id="e">	</p>
+						
+
+					</ul>
+
+
+
+
+					<!-- <input type="radio" class="cek" data-id="0" id="choice0">
+					<label for="choice1" id="choiceText0"></label>
+				</div>
+
+				<div class="option" >
+					<input type="radio" class="cek" data-id="1"id="choice0">
+					<label for="choice1" id="choiceText1"></label>
+				</div>
+
+				<div class="option" >
+					<input type="radio" class="cek" data-id="2" id="choice0">
+					<label for="choice1" id="choiceText2"></label>
+				</div> -->
+
+				<!-- <div class="option" >
+					<input type="radio" class="cek" data-id="3" id="choice0">
+					<label for="choice1" id="choiceText3"></label> -->
+				</div>
+		
+
+		<footer>
+			<div class="sisa-question">
+				<!-- <p>1<p>of</p><p>5 </p><p>Question</p></p> -->
+			</div>
+			<div class="next">
+				<button type="submit">Selanjutnya</button>
+			</div>
+		</footer>
+	</div>
+</div>
+	<!-- box skor -->
+	<div class="box-skor">
+		<div class="icon-Selamat">
+			<img src="image/selamat.png">
+		</div>
+		<div class="hasil">
+			<p class="ucapan">Anda telah menyelesaikan Quiz,dan selamat 
+				<i class="fa-solid fa-party-horn"></i>
+		<p class="hasilAkhir"></p>
+		<div class="keterangan">
+			<!-- <p>kamu <p>benar</p> <p>4</p> <p>dari</p> <p> 5 soal</p></p> -->
+		</div>
+		<div class="predikat">
+		</div>
+		
+							
+		</div>
+
+		<div class="btn-skor">
+			
+			<button class="keluar" type="submit">Keluar Quiz</button>
+		</div>
+	</div>
+
+	<!-- <div class="footer">
+		<p>copyright@anggernuramin</p>
+	</div> -->
+
+<script src="script.js"></script>
+<!-- <script src="db.js"></script>  -->
+</body>
+</html>

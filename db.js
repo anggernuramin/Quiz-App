@@ -1,0 +1,165 @@
+// membuat object
+const Data=[
+	{
+		question : "1. Selector CSS untuk memberi warna pada teks ?",
+		a: "margin",
+		b: "padding",
+		c: "color",
+		d: "background color",
+		correct: "d",
+
+	},
+	{
+		question : "2. Selector CSS untuk mengatur ukuran font ?",
+		a: "font-family",
+		b: "font-size",
+		c: "color",
+		d: "background color",
+		correct: "b",
+	},
+	{
+		question : "3. Tag html untuk paragraf ?",
+		a: "hr",
+		b: "span",
+		c: "p",
+		d: "link",
+		correct: "c",
+	},
+	{
+		question : "4. tag html untuk gambar ?",
+		a: "img",
+		b: "form",
+		c: "table",
+		d: "header",
+		correct: "a",
+	},
+	{
+		question : "5.Berikut ini digunakan untuk memberhentikan setInterval pada timing-events ?",
+		a: "get.Attribute()",
+		b: "clearInterval()",
+		c: "setTimeut()",
+		d: "clearTimeout()",
+		correct: "b",
+	},
+
+	{
+		question : "6. Method array pada JavaScript yang berfungsi untuk menambah elemen diakhit array ?",
+		a: "pop()",
+		b: "slice()",
+		c: "Map()",
+		d: "push()",
+		correct: "d",
+	},
+
+	{
+		question : "7. Yang termasuk dalam pop-up box pada JavaScript ?",
+		a: "confirm",
+		b: "while",
+		c: "if",
+		d: "switch",
+		correct: "a",
+	},
+	{
+		question : "8. Dibawah ini yang termasuk satuan  relative unit adalah? ",
+		a: "px,em,rem",
+		b: "em,%,px",
+		c: "vmin,ch,rem",
+		d: " px,vh,vw",
+		correct: "d",
+	},
+	{
+		question : "9.Yang termasuk value pada property animation ? ",
+		a: "duration",
+		b: "scale",
+		c: "Rotate",
+		d: "rgba()",
+		correct: "a",
+	},
+	{
+		question : "10. Berikut ini format font yang khusus dibuat untuk website oleh Mozilla ? ",
+		a: "OTF",
+		b: "TTF",
+		c: "WOFF",
+		d: "-moz-",
+		correct: "c",
+	},
+	{
+		question : "12. Value background-image yang berfungsi untuk membuat gradasi melingkar ? ",
+		a: "radial-gradient()",
+		b: "background -repeat",
+		c: "linear-gradient()",
+		d: "background-position",
+		correct: "a",
+	},
+	{
+		question : "13 .Yang bukan termasuk dalam value CSS position ? ",
+		a: "static",
+		b: "relative",
+		c: "Flex",
+		d: "absolut",
+		correct: "c",
+	},
+	{
+		question : "14.sebuah standar yang mendefinisikan bagaimana web server perangkat lunak dapat mendelegasikan generasi dari halaman web ke berbasis teks aplikasi adalah ? ",
+		a: "Perl dan CGI",
+		b: "CGI",
+		c: "semua jawaban salah",
+		d: "Perl",
+		correct: "b",
+	},
+	{
+		question : "15. Manakah yang merupakan servert spesicic variable pada CGI dibwah ini yang benar ? ",
+		a: "SERVER_PROTOCOL",
+		b: "GATEWAY_INTERFACE",
+		c: "REQUEST_METHOD",
+		d: "PATH_INFO",
+		correct: "b",
+	},
+	{
+		question : "16. Manakah yang merupakan servert spesicic variable pada CGI dibwah ini yang benar ? ",
+		a: "SERVER_PROTOCOL",
+		b: "GATEWAY_INTERFACE",
+		c: "REQUEST_METHOD",
+		d: "PATH_INFO",
+		correct: "b",
+	},
+	{
+		question : "17. Untuk menuliskan komentar dalam satu baris didalam javascript kita menggunakan ?",
+		a: "//komentar //",
+		b: "//komentar */",
+		c: "/* komentar",
+		d: "\\ komentar \\",
+		correct: "a",
+	},
+	{
+		question : "18. Tag HTML yang digunakan untuk memisahkan teks menjadi baris baru adalah ?",
+		a: "<hr>",
+		b: "<break>",
+		c: "<teks>",
+		d: "<br>",
+		correct: "d",
+	},
+	{
+		question : "19. Properti yang digunakan untuk mengatur ketebalan huruf ?",
+		a: "font-weight",
+		b: "font-family",
+		c: "font-size",
+		d: "text-transform",
+		correct: "a",
+	},
+	{
+		question : "20. Properti yang digunakan untuk mengatur transparansi ?",
+		a: "box-shadow",
+		b: "filter",
+		c: "opacity",
+		d: "letter-spacing",
+		correct: "c",
+	},
+
+
+
+
+
+];
+// const koreksi = [2, 1, 2, 0];
+// console.log(dataBase)

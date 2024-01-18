@@ -1,0 +1,836 @@
+/*reset css sederhana*/
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Oswald:wght@200;300;400;500&family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif
+}
+
+body{
+	background-color: #eaeaea;
+	height: 100vh;
+/*	position: relative;*/
+	
+}
+
+/*waves****************************/
+.box_rule,
+.box-question,
+.box-skor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .5s;
+}
+
+/*styling navbar*/
+
+
+.box-navbar.displayNavbar{
+	display: block;
+	transition: all .5s;
+	pointer-events: auto;
+}
+.box-navbar {
+	display: none;
+	position: fixed;
+	width: 100%;
+	padding: 15px 100px;
+	background-color: darkblue;
+	
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .icon{
+	display: flex;
+	align-items: center;
+	color: white;
+	
+}
+
+nav .icon span {
+	font-size: 25px;
+	font-weight: 500;
+	color: white;
+}
+nav .icon i{
+	font-weight: 600;
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+nav .nama {
+	font-weight: 500;
+	color: white;
+	font-size: 25px;
+}
+
+
+
+
+
+
+.container.hilangkan{
+	display: none;
+}
+
+.container{
+/*	display: none;*/
+width: 85%;
+margin:15px auto;
+/*background-color: white;*/
+/*padding: 15px 30px;*/
+overflow: hidden;
+border-radius: 5px;
+}
+
+
+.box-login{
+	max-width: 1000px;
+	margin: auto;
+	background-color:white;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	border-radius: 5px;
+
+
+}
+
+.box-login .left{
+/*	display: none;*/
+	background-color: white;
+	width: 60%;
+}
+.left img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.box-login .right{
+/*	display: none;*/
+	width: 40%;
+/*	height: 100%;*/
+	background-image: linear-gradient(darkblue 55%, skyblue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.right .box-form{
+	text-align: center;
+	align-items: center;
+
+}
+
+.box-form form{
+	width: 280px;
+	background-color: white;
+	margin: 80px auto;
+	padding: 15px 30px;
+	border-radius: 5px;
+}
+
+form i {
+	font-size: 3rem;
+	color: darkblue;
+}
+form h2{
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 2rem;
+}
+form hr{
+	margin: 15px;
+	border: 2ps solid rgba(0, 0, 0, .7);
+}
+form .input-group{
+	position: relative;
+	z-index: 2;
+}
+
+.input-group input{
+	border-radius: 5px;
+	padding: 8px 20px;
+	width: 100%;
+	text-transform: capitalize;
+	background-color: transparent;
+	border: 1px solid none;
+	transition: all .5s ;
+	cursor: pointer;
+
+}
+
+.input-group label {
+	font-weight: 400;
+	font-size: 1rem;
+	position: absolute;
+	left: 16px;
+	transform: translateY(5px);
+}
+
+ .input-group input:focus{
+	box-sizing: border-box;
+	background-color: transparent;
+	box-shadow: 0 0 15px rgba(0, 0, 255, .4)
+}
+
+.input-group input:focus ~ label{
+ 	padding: 0 10px;
+ 	color: white;
+	background-color: black;
+	left: 13px;
+	transform: translateY(-50%) scale(0.8);
+
+}
+
+/*.input-group input:hover label{
+ 	padding: 0 10px;
+ 	color: white;
+	background-color: black;
+	left: 13px;
+	transform: translateY(-50%) scale(0.8);
+
+}*/
+.box-form p {
+	margin: 10px 0;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+form .start-quiz button{
+	margin: 10px 20px 20px 20px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding: 5px 25px;
+	border-radius: 5px;
+	background-color: darkblue;
+	color: 	white;
+	cursor: pointer;
+	border: 2px solid transparent;
+	outline: none;
+	transition: all .3s;
+}
+form .start-quiz button:hover{
+	background-color: transparent;
+	border: 2px solid darkblue;
+	color: #333;
+
+}
+
+
+/*style box aturan permainan*/
+/*style saat button starr quiz diklik*/
+
+
+
+
+.box_rule{
+	display: none;
+	width: 550px;
+	height: min-content;
+	background-color: white;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+	border-radius: 5px;
+/*	padding: 0px 30px;*/
+	overflow: hidden;
+}
+
+.box_rule header{
+	padding: 13px 30px;
+	box-shadow: 0px 0px 10px darkblue;
+	width: 100%;
+}
+
+.box_rule header h2{
+	text-align: left;
+	text-transform: capitalize;
+	font-weight: 500;
+	color: #333;
+	font-size: 1.4rem;
+}
+
+.box_rule .daftar-list{
+	padding: 15px 30px;
+}
+
+.daftar-list ul{
+	list-style-type: none;
+}
+.daftar-list ul .list{
+	margin: 5px;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.daftar-list ul li span{
+	font-weight: 600;
+	color: darkblue;
+	letter-spacing: 10x;
+}
+
+.box_rule .tombol{
+	padding: 10px 30px;
+	border-top: 1px solid #333;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.tombol button{
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 5px 20px;
+	margin: 10px;
+/*	height: 40px;*/
+	transition: all .5s;
+}
+.tombol .exit{
+	border: 2px solid darkblue;
+	background-color: transparent;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.tombol .continue{
+	border-radius: 5px;
+	border: 2px solid transparent;
+	background-color: darkblue;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.tombol .exit:hover{
+	border: 2px solid transparent;
+	background-color: darkblue;
+	color: white;
+}
+
+.tombol .continue:hover{
+	background-color: transparent;
+	border: 2px solid darkblue;
+	color: #333;
+}
+/*rule permainan selesai*/
+
+/*soal*/
+
+.box-skor.displaySkor{
+	display: block;
+	position: relative;
+	z-index: 999;
+}
+.box-question.displayQuestion,
+.box_rule.tampilkan {
+	transition: all .5s;
+	pointer-events: auto;
+	display: block;
+	position: relative;
+	z-index: 5;
+}
+.box-question {
+	position: relative;
+	z-index: 3;
+	display: none;
+	width: 550px;
+	height: min-content;
+	background-color: white;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+	border-radius: 5px;
+/*	padding: 0px 30px;*/
+	overflow: hidden;
+}
+
+.box-question header{
+	padding: 15px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+.box-question header h3{
+	font-weight: 500;
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+}
+
+.box-question header .waktu{
+	display: flex;
+	align-items: center;
+	background-color: #eaeaea;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+header .waktu .waktu-text{
+	font-weight: 500;
+	font-size: 1rem;
+	margin-right: 15px;
+}
+
+header .waktu .waktu-detik{
+	background-color: darkblue;
+	color: white;
+	padding: 5px 13px;
+	border-radius: 5px;
+}
+
+.box-question .option-list{
+	padding: 15px 30px;
+	cursor: pointer;
+}
+
+.option-list .question{
+	display: block;
+	margin-bottom: 15px;
+}
+
+.box-question.styleParagraf{
+	font-weight: 500;
+	font-size: 1.4rem;
+}
+
+.option-list .option{
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	transition: all .3s ;
+/*	padding: 10px 30px;*/
+/*	z-index: 9999;*/
+	position: relative;
+}
+
+.option ul{
+	list-style-type: none;
+
+}
+
+.option ul li {
+	padding: 5px 20px;
+/*	background-color: transparent;*/
+	border-radius: 5px;
+	border: 2px solid darkblue;
+	box-sizing: border-box;
+	margin: 10px;
+/*	overflow: hidden;*/
+   
+}
+
+
+.option ul li input{
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 5rem;
+
+}
+
+.option label{
+	display: inline-block;
+/*	background-color: green;*/
+/*	padding: 0px 250px 0px 0px;*/
+	font-weight: 400;
+	font-size: 20px;
+	color = #333;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	
+}
+/*.styleSpan{
+	display: block;
+	padding: 3px 10px;
+	font-weight: 300;
+	font-size: 25px;
+	color = #333;
+	cursor: pointer;
+
+}
+#opsi1 {
+	cursor: pointer;
+}
+
+.option-list .option .icon{
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid darkblue;
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.option-list .option i{
+	line-height: 30px;
+	color: #333;
+}*/
+/*.option ul li #def,
+.option ul li #optionDef{
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}*/
+.option ul li:hover{
+	background-color: darkblue;
+	color: black;
+	transform: scale(1.1);
+	border: 2px solid darkblue;
+	transition: .3s;
+}
+
+/*.option ul li input:checked{
+	background-color: oranye;
+}*/
+
+.option ul.sembunyi{
+	pointer-events: none;
+	opacity: 0;
+	background-color: orange;
+	width: 500px;
+}
+
+.box-question footer{
+	padding: 15px 30px;
+	border-top: 2px solid rgba(0, 0, 0, .2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-question footer .sisa-question{
+	display: flex;
+	align-items: center;
+}
+/*
+footer .sisa-question p{
+	margin: 2px;
+	color: #333;
+	font-weight: 400;
+}
+
+.sisa-question p:nth-child(odd){
+	font-weight: 600;
+}
+*/
+footer .next{
+}
+
+footer .next.displayNext{
+	display: block;
+}
+
+footer .next button{
+	padding: 8px 25px;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	background-color: darkblue;
+	transition: all .3s;
+	font-weight: 500;
+	font-size: 1rem;
+	color: white;
+	
+	cursor: pointer;
+}
+
+.next:hover button{
+	background-color: transparent;
+	border: 2px solid darkblue;
+	color: #333;
+}
+
+/*style skor*/
+
+
+.box-skor{
+	position: relative;
+	z-index: 999;
+	display: none;
+	width: 360px;
+	height: min-content;
+	background-color: white;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+	border-radius: 5px;
+/*	padding: 0px 30px;*/
+	overflow: hidden;
+}
+
+.box-skor .icon-Selamat{
+	width: 110px;
+	height: 100px;
+	margin: 10px auto;
+	
+}
+
+.box-skor .icon-Selamat img{
+	width: 110px;
+	height: 100px;
+}
+
+
+
+.box-skor .hasil{
+	padding: 5px 30px ;
+	text-align: center;
+	}
+.box-skor .hasil .ucapan{
+	
+	font-weight: 500;
+	font-size: 1.3rem;
+}
+
+.box-skor .hasil .hasilAkhir{
+	font-weight: 500;
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+.box-skor .hasil .keterangan{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-skor .hasil .keterangan p{
+	margin: 3px;
+}
+
+.box-skor .btn-skor{
+	padding: 10px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.btn-skor button{
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 5px 20px;
+	margin: 10px;
+/*	height: 40px;*/
+	transition: all .5s;
+
+}
+.btn-skor .keluar{
+	border: 2px solid darkblue;
+	background-color: transparent;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.btn-skor .ulangi{
+	border-radius: 5px;
+	border: 2px solid transparent;
+	background-color: darkblue;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.btn-skor .keluar:hover{
+	border: 2px solid transparent;
+	background-color: darkblue;
+	color: white;
+}
+
+.btn-skor .ulangi:hover{
+	background-color: transparent;
+	border: 2px solid darkblue;
+	color: #333;
+}
+
+
+
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;  
+	background-image: url("image/bg1.png");
+	background-position: center;
+
+
+  }
+
+  .container{
+  	height: 100vh;
+  	margin: 0;
+  	width: 100%;
+  	background-color: green;
+  	background-image: url('image/img-Login.png');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center;
+  }
+
+  .box-login{
+  	display: block;
+  	margin: auto;
+  	background-color: transparent;
+  	border: 2px solid darkblue;
+  }
+
+  .box-login .left{
+  	display: none;
+/*  	background-color: orange;*/
+  }
+
+  .box-login .right{
+/*  	padding: 15px 30px;*/
+  	background-image: none;
+  	display: block;
+  }
+
+ .right .box-form{
+	text-align: center;
+	align-items: center;
+
+}
+
+.box-form form{
+	border: 2px solid darkblue;
+	width: 280px;
+	background-color: white;
+	margin: 80px auto;
+/*	padding: 15px 30px;*/
+	border-radius: 5px;
+	transform: translateX(17%);
+}
+
+ .box_rule,
+ .box-question,
+ .box-skor{
+		width: 340px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+  .box-navbar {
+	display: none;
+	position: fixed;
+	width: 100%;
+	padding: 10px 60px;
+	background-color: darkblue;
+	z-index: 9999;
+
+	
+}
+nav{
+	display: flex;
+	flex-direction: column;
+	
+}
+nav .icon span {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+nav .icon i{
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-right: 10px;
+}
+
+nav .nama {
+	font-weight: 500;
+	color: white;
+	font-size: 1.2rem;
+}
+
+.box_rule header h2{
+	font-size: 1.2rem;
+	f
+}
+
+.box_rule .daftar-list{
+	padding: 15px 30px;
+}
+
+
+.daftar-list ul .list{
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+
+
+.box-question {
+	position: relative;
+	z-index: 3;
+	display: none;
+
+	height: min-content;
+	background-color: white;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	overflow: hidden;
+	top: 360px;
+}
+
+.box-question header{
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+.box-question header h3{
+	font-weight: 500;
+	font-size: 1.1rem;
+	letter-spacing: 0px;
+}
+
+
+header .waktu .waktu-text{
+	display: block;
+	font-size: 14px;
+}
+.option label:nth-child{
+	position: absolute;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-question footer{
+	padding: 15px 10px;
+}
+
+
+
+}
+
+
+
+
